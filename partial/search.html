@@ -1,0 +1,18 @@
+<label>Title</label>
+<input ng-model="movie.title">
+
+<label>Year</label>
+<input ng-model="movie.year">
+
+<label>Runtime</label>
+<input ng-model="movie.runtime">
+
+<button ng-click="generateLink(movie)">Search</button>
+
+
+<div ng-show="movieShow" ng-repeat="element in movieList">
+ <div>{{element.Title}}</div>
+ <div>{{element.Year}}</div>
+ <button ng-click="addToWatchList(element)">Add to Watch List</button>
+</div>
+

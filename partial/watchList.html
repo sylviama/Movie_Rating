@@ -1,0 +1,17 @@
+<h4>Watch List</h4>
+<div ng-repeat="element in watchListMovie" ng-hide="element.watched">
+  <div>{{element.Title}}</div>
+  <div>{{element.Year}}</div>
+  <div>Rate:<div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>{{rate}} Out of 5</div>
+</div>
+
+<h4>Watched</h4>
+<div ng-repeat="element in watchListMovie" ng-show="element.watched">
+  <div>{{element.Title}}</div>
+  <div>{{element.Year}}</div>
+  <div>Rate:<div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>{{rate}} Out of 5</div>
+</div>
